@@ -1,0 +1,338 @@
+/* Responsive Design Improvements */
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Tarjeta efecto glassmorphism */
+.card.custom-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+    margin: 1rem;
+    min-width: 280px;
+    /* Minimum width for readability */
+}
+
+.card.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Botón primario personalizado */
+.btn-primary {
+    background-color: #4fc3f7;
+    border-color: #4fc3f7;
+}
+
+.btn-primary:hover {
+    background-color: #29b6f6;
+    border-color: #29b6f6;
+}
+
+/* Botón acento personalizado */
+.btn-accent {
+    background-color: #ff8a65;
+    border-color: #ff8a65;
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: #ff7043;
+    border-color: #ff7043;
+}
+
+.bg {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    color: white;
+}
+
+/* Navigation responsive */
+nav {
+    width: 96%;
+    margin: auto;
+}
+
+/* Form responsive styles */
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Login form responsive */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Users grid responsive */
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Technology cards responsive */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Button groups responsive */
+.btn-group-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.btn-group-responsive .btn {
+    flex: 1;
+    min-width: 120px;
+}
+
+/* Image responsive */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Navbar collapse fix for mobile */
+.navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Mobile-first breakpoints */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .form-container {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    .login-container {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    .card.custom-card {
+        margin: 0.5rem;
+        min-width: auto;
+    }
+
+    .users-grid {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .btn-group-responsive {
+        flex-direction: column;
+    }
+
+    .btn-group-responsive .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0;
+    }
+
+    /* Stack form fields vertically on mobile */
+    .col-md-6 {
+        width: 100% !important;
+    }
+
+    /* Adjust card body padding */
+    .card-body {
+        padding: 1rem;
+    }
+
+    /* Hero section adjustments */
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .form-container {
+        width: 90%;
+    }
+
+    .login-container {
+        width: 80%;
+    }
+
+    .users-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn-group-responsive .btn {
+        min-width: 140px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .form-container {
+        width: 70%;
+    }
+
+    .login-container {
+        width: 60%;
+    }
+
+    .users-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .form-container {
+        width: 50%;
+    }
+
+    .login-container {
+        width: 40%;
+    }
+
+    .users-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .form-container {
+        width: 40%;
+    }
+
+    .login-container {
+        width: 30%;
+    }
+
+    .users-grid {
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+/* Utility classes for responsive behavior */
+.text-responsive {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+}
+
+.title-responsive {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.subtitle-responsive {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+/* Improved card responsiveness */
+.card-responsive {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+/* Better button spacing on mobile */
+.d-flex.justify-content-between {
+    gap: 0.5rem;
+}
+
+@media (max-width: 575.98px) {
+    .d-flex.justify-content-between {
+        flex-direction: column;
+    }
+
+    .d-flex.justify-content-between .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Navbar improvements for mobile */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        margin-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 1rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+}
+
+/* Welcome message responsive */
+.welcome-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 767.98px) {
+    .welcome-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .welcome-section span {
+        font-size: 0.9rem;
+    }
+}
