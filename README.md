@@ -148,12 +148,19 @@ La aplicación estará disponible en `http://localhost:5173`
 
 - [Live Demo](https://deveps.ddns.net/authentify)
 
-## 📞 Contacto
+---
 
-Enrique — [@devepsdev](https://x.com/devepsdev) — <devepsdev@gmail.com>
+## 👨‍💻 Autor
+
+**DevEps** - Desarrollador Full Stack
+
+- GitHub: [github.com/devepsdev](https://github.com/devepsdev)
+- Portfolio: [deveps.ddns.net](https://deveps.ddns.net)
+- Email: devepsdev@gmail.com
+- LinkedIn: [www.linkedin.com/in/enrique-perez-sanchez](https://www.linkedin.com/in/enrique-perez-sanchez/)
 
 ---
 
-⭐ ¡Dale una estrella a este proyecto si te ha gustado!
+⭐ ¡Dale una estrella si el proyecto te ha resultado útil!
 
 💡 ¿Tienes ideas para mejorar? ¡Abre un issue o contribuye con código!
