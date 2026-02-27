@@ -139,19 +139,6 @@ La aplicación estará disponible en `http://localhost:5173`
 
 ## 👨‍💻 Autor
 
-**deveps** - _Desarrollo Full Stack_
-
-- GitHub: [@devepsdev](https://github.com/devepsdev)
-- Portfolio: [deveps.ddns.net](https://deveps.ddns.net)
-
-## 🔗 Enlaces Relacionados
-
-- [Live Demo](https://deveps.ddns.net/authentify)
-
----
-
-## 👨‍💻 Autor
-
 **DevEps** - Desarrollador Full Stack
 
 - GitHub: [github.com/devepsdev](https://github.com/devepsdev)
